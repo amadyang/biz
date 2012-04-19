@@ -1,0 +1,83 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */
+/* Modified for a submission to the CSS Framework Design Contest on http://raibledesigns.com */
+/* by Marc Hinse, www.modxcms.de, mh@madeyourweb.com */
+
+/* NAV */
+	div#nav {
+        font-size: 1em;
+    }
+    * html div#nav {
+        /* hide ie/mac \*/
+        height: 1%;
+        /* end hide */
+    }
+    div#nav div.wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    div#nav ul {
+        width: auto; 
+        width: 100%;
+                
+        margin: 0;
+        padding: 0;
+        
+        line-height: 1em;
+        list-style: none;
+    }
+    div#nav li {
+        float: left;
+        display: inline;
+   
+        list-style: none;
+        
+        margin: 0;
+        padding: 0;
+        
+        line-height: 1em;
+        border-right: 1px solid #FFF;
+    }
+    div#nav li.last {
+        border-right: none;
+    }
+    div#nav a,
+    div#nav a:link,
+    div#nav a:active,
+    div#nav a:visited {
+     /*  display: inline-block; -> fails validation */ 
+        /* hide from ie/mac \*/
+        display: block;
+        /* end hide */
+        font-weight: normal;
+        text-decoration: none;
+        
+        margin: 0;
+        padding: 9px 15px 10px 15px;
+        
+        color: #FFF;
+        background: #003366;
+    }
+    div#nav a:hover {
+        text-decoration: none;
+        background: #006699;
+    }
+    div#nav strong {
+      /*  display: inline-block; -> fails validation */ 
+        /* hide from ie/mac \*/
+        display: block;
+        /* end hide */
+        
+        color: #003366;
+        background: #FFF;
+    }
+    div#nav strong a,
+    div#nav strong a:link,
+    div#nav strong a:active,
+    div#nav strong a:visited,
+    div#nav strong a:hover {
+       color: #003366;
+        background: #FFF;
+    }
+/* END NAV */

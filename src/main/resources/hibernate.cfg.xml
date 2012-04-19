@@ -1,0 +1,14 @@
+<!-- NOTE: If you're working offline, you might have to change the DOCTYPE to the following:
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+       <property name="hibernate.generate_statistics">true</property>
+        <mapping class="com.vpower.model.User"/>
+        <mapping class="com.vpower.model.Role"/>
+        <mapping class="com.vpower.model.VpCustomerNew"/>
+     </session-factory>
+</hibernate-configuration>

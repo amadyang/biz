@@ -1,0 +1,58 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */
+/* Modified for a submission to the CSS Framework Design Contest on http://raibledesigns.com */
+/* by Marc Hinse, www.modxcms.de, mh@madeyourweb.com */
+
+@import url("nav-horizontal.css");
+ 
+/* NAV BAR AT THE TOP AND TWO COLUMNS OF CONTENT */
+    div#content {
+        position: relative;
+        width: 780px;
+        margin: 0 auto 0px auto;
+        padding: 0 0 0 0;
+        text-align: left;
+        background: #F5F5F5;
+    }
+    div#main {
+        float: left;
+        width: 597px;
+        display: inline;
+        background: #FFF;
+        padding-bottom: 20px;
+    }
+    div#sub {
+        float: right;
+        width: 170px;
+        display: inline;
+        background: #F5F5F5;
+        padding-top: 15px;
+    }
+    div#local {
+        display: none;
+    }
+    div#nav {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    div#sub p{
+    font-size: 0.9em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+    }
+    
+    div#sub h2{
+    font-size: 0.9em;
+    margin-left: 1em;
+    margin-right: 0.8em;
+    border: 0;
+    }
+    
+    
+/* END CONTENT */
+
+/* fucking IE5 and IE5.5 re-positioning */
+    * html  div#nav {content:"\"; top: -56px; }
